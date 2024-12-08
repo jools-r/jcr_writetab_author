@@ -16,6 +16,10 @@ Download and copy the plugin code to the plugin installer textarea. Install and 
 
 h2. Changelog
 
+h3. 0.1.1 - 2024-12-08
+
+* Restrict to users with 'admin.list' and 'article.php' privileges (thanks Oleg).
+
 h3. 0.1.0 - 2024-12-08
 
 * Initial public release.
