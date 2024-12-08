@@ -1,6 +1,6 @@
 # jcr_writetab_author
 
-Optionally assign an article to another author from within the @Write@ panel.
+Optionally assign an article to another author from within the `Write` panel.
 
 ---
 
