@@ -1,0 +1,17 @@
+/node_modules
+.cache
+.parcel-cache
+.parcel-cache/*
+.DS_Store
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+.project
+.settings
+.nova
+.vscode
+*.esproj
+config.codekit
+config.codekit3
