@@ -18,7 +18,7 @@ A: For the author select dropdown to appear, your site must have more than one a
 
 ## Changelog
 
-### 0.1.1 - 2024-12-08
+### 0.1.1 / 0.1.2 - 2024-12-09
 
 - Restrict to users with 'admin.list' and 'article.php' privileges (thanks Oleg).
 
