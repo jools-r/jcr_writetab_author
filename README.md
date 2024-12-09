@@ -16,6 +16,8 @@ Q: I don’t see an author select dropdown
 
 A: For the author select dropdown to appear, your site must have more than one author.
 
+A: For security reasons, the author select dropdown is also only visible to users with sufficient rights to change users using the multi-edit dropdown on the "Articles" pane, and to users who are permitted to include PHP in articles. In a standard Textpattern setup these are the Publisher, Managing Editor and Copy Editor roles.
+
 ## Changelog
 
 ### 0.1.1 / 0.1.2 / 0.1.3 - 2024-12-09

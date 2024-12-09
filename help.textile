@@ -10,6 +10,8 @@ h4. I don’t see an author select dropdown
 
 For the author select dropdown to appear, your site must have more than one author.
 
+For security reasons, the author select dropdown is also only visible to users with sufficient rights to change users using the multi-edit dropdown on the "Articles" pane, and to users who are permitted to include PHP in articles. In a standard Textpattern setup these are the Publisher, Managing Editor and Copy Editor roles.
+
 h2. Installation
 
 Download and copy the plugin code to the plugin installer textarea. Install and verify to begin the automatic setup. After activating the plugin, you will see an Author select dropdown in a new “Author” subsection of the sidebar in the Write panel.
