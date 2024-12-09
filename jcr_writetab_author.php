@@ -40,8 +40,10 @@ class jcr_writetab_author
 
      protected function article_author_select($default, $rs)
     {
+        global $txp_user;
+
         $out="";
-        $author = $rs['AuthorID'];
+        $author = !empty($rs['AuthorID']) ? $rs['AuthorID'] : $txp_user;
         $all_authors = array();
 
         foreach (safe_rows("name, RealName", 'txp_users', "1=1 ORDER BY RealName ASC") as $user) {
