@@ -8,7 +8,7 @@
 global $event;
 
 if (txpinterface === 'admin') {
-    if ($event === 'article') {
+    if ($event === 'article' && has_privs('admin.list') && has_privs('article.php')) {
         new jcr_writetab_author();
     }
 }
@@ -20,16 +20,14 @@ class jcr_writetab_author
      */
     public function __construct()
     {
-        if (has_privs('admin.list') && has_privs('article.php')) {
-            // Add article author UI region after sort_display block
-            register_callback(function($event, $step, $default, $rs) {
-                return $this->article_author_select($default, $rs);
-            }, 'article_ui', 'sort_display', 0);
+        // Add article author UI region after sort_display block
+        register_callback(function($event, $step, $default, $rs) {
+            return $this->article_author_select($default, $rs);
+        }, 'article_ui', 'sort_display', 0);
 
-            // Amend author on article post/save
-            register_callback(array($this, 'article_author_amend'), 'article_posted');
-            register_callback(array($this, 'article_author_amend'), 'article_saved');
-        }
+        // Amend author on article post/save
+        register_callback(array($this, 'article_author_amend'), 'article_posted');
+        register_callback(array($this, 'article_author_amend'), 'article_saved');
     }
 
     /**
